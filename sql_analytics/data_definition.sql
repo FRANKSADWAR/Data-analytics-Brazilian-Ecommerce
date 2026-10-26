@@ -98,3 +98,9 @@ ADD INDEX orders_idx (order_id, customer_id);
 ALTER TABLE olist_orders
 ADD INDEX orders_idx (order_id);
 
+
+-- Insert example to test datetime
+
+INSERT INTO olist_orders (order_id, customer_id, order_status, order_purchase_timestamp, order_approved_at, order_delivered_carrier_date,order_delivered_customer_date,order_estimated_delivery_date)  
+VALUES ('e481f51cbdc54678b7cc49136f2d6af7','9ef432eb6251297304e76186b10a928d','delivered','2017-10-02 10:56:33','2017-10-02 11:07:15','2017-10-04 19:55:00','2017-10-10 21:25:13','2017-10-18 00:00:00');
+
